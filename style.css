@@ -38,27 +38,27 @@ header{
     font-size: large;
 }
 
-ul{
+header ul{
     list-style-type: none;
     display: flex;
     flex-direction: row;
     gap: 20px;
 }
 
-a{
+header a{
     color: white;
 }
 
-a:link { 
+header a:link { 
     text-decoration: none; 
 } 
-a:visited { 
+header a:visited { 
     text-decoration: none; 
 } 
-a:hover { 
+header a:hover { 
     text-decoration: none; 
 } 
-a:active { 
+header a:active { 
     text-decoration: none; 
 }
 
@@ -68,8 +68,6 @@ main{
     align-items: center;
     padding-left: 15%;
     padding-right: 15%;
-    width: 100%;
-    gap: 40px;
     font-size: large;
 }
 
@@ -82,9 +80,7 @@ main img{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
-    width: 750px;
-    min-height: 20vh;
+    width: 100%;
 }
 
 .hautdepage article{
@@ -101,16 +97,50 @@ main img{
     padding-bottom: 20px;
 }
 
+.form-content {
+    display: flex;
+    background: #fff;
+    border-radius: 60px;
+    padding: 2px;
+}
+
 input[type=text] {
     width: 100%;
     box-sizing: border-box;
     padding: 3% 3%;
-    border-radius: 60px;
+    /* border-radius: 60px; */
     resize: none;
-    color: gray;
-    background-color: rgb(191, 223, 233);
-    border: 0cap;
+    color: #000;
+    border: none;
+    background: none;
+    /* background-color: rgb(191, 223, 233); */
+    /* border: 0cap; */
   }
+
+input[type=submit] {
+    background-color: rgb(15, 112, 150);
+    border-radius: 60px;
+    border: none;
+    color: white;
+    padding: 5px;
+    margin-left: 100%;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.5s;
+    opacity: 50%;
+}
+
+input[type=text]:focus {
+    background: none;
+    border: none;
+    outline: none;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(104, 167, 192);
+}
+
 
 .ProductsFeatures{
     text-align:center;
@@ -121,6 +151,7 @@ input[type=text] {
 
 
 .ProductsFeatures h1{
+    font-size: 200%;
     text-align:center;
     color: black;
     padding-top: 20px;
@@ -187,6 +218,7 @@ input[type=text] {
 }
 
 .teams h1{
+    font-size: 200%;
     text-align:center;
     color: black;
     padding-top: 20px;
@@ -196,6 +228,7 @@ input[type=text] {
 }
 
 .teams p{
+    font-size: 150%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,14 +241,14 @@ input[type=text] {
 .team{
     display:flex;
     justify-content:center;
-    gap: 20px;
-    height: 400px;
+    gap: 40px;
+    height: 500px;
 }
 
 .pdp{
     text-align: center;
-    height: 250px;
-    width: 250px;
+    height: 100%;
+    width: 17%;
     padding-left: 2%;
     padding-right: 2%;
     transition: 0.5s;
@@ -231,6 +264,7 @@ input[type=text] {
     filter: grayscale(1);
     transition: 0.5s;
     object-fit: cover;
+    display: block;
 }
 
 .pdp img:hover{
@@ -284,13 +318,14 @@ input[type=text] {
 
 .parallax p{
     text-align: center;
-    color: gray;
+    color: white;
     padding-bottom: 30px;
 }
 
 input[type=button] {
     border-radius: 7px;
-    border: white;
+    border: 1px solid white;
+    background: none;
     color: white;
     padding: 16px 32px;
     margin-left: 100%;
@@ -302,8 +337,180 @@ input[type=button] {
   }
 
 .parallax input:hover{
+    background:#fff;
     transform: translate(0px, -3px);
     transition: 0.7s;
     color: black;
     opacity: 100%;
+}
+
+.blog{
+    text-align:center;
+    color: black;
+    padding-top: 45px;
+    padding-bottom: 40px;
+}
+
+
+.blog h1{
+    text-align:center;
+    color: black;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 30%;
+    padding-right: 30%;
+    font-size: 200%;
+}
+
+.blog p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:gray;
+    padding-top: 15px;
+    padding-left: 30%;
+    padding-right: 30%;
+    font-size: 150%;
+}
+
+
+.containerblog{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    gap: 50px;
+}
+
+.cardblog{
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: 0.5s;
+    width: 25%;
+}
+
+.cardblog img{
+    background-color: black;
+    width: 100%;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.card-textblog h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card-textblog p{
+    color: grey;
+    padding-bottom: 10px;
+}
+
+.card-textblog a{
+    color: rgb(59, 135, 197);
+}
+
+.card-textblog a:link { 
+    text-decoration: none; 
+} 
+.card-textblog a:visited { 
+    text-decoration: none; 
+} 
+.card-textblog a:hover { 
+    text-decoration: none; 
+} 
+.card-textblog a:active { 
+    text-decoration: none; 
+}
+
+.conteneura {
+    position: relative;
+}
+.NameBlog {
+    color: white;
+    position: absolute;
+    padding: 10%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 2;   
+    font-size: 140%;
+}
+
+.conteneura:hover img {
+    filter: brightness(0.5);
+  }
+  
+.conteneura:hover .NameBlog {
+    opacity: 1;
+  }
+
+.DateBlog {
+    color: white;
+    position: absolute;
+    padding: 10%;
+    padding-top: 18%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 2;   
+}
+
+.conteneura:hover .DateBlog {
+    opacity: 1;
+  }
+
+footer{
+    background-color: rgb(24, 24, 24);
+    color: white;
+    padding-top: 5%;
+    padding-bottom: 50px;
+    font-size: large;
+}
+
+footer a{
+    color: gray;
+}
+
+footer a:link { 
+    text-decoration: none; 
+} 
+footer a:visited { 
+    text-decoration: none; 
+} 
+footer a:hover { 
+    text-decoration: none; 
+} 
+footer a:active { 
+    text-decoration: none; 
+}
+
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    list-style-type: none;
+    gap: 40px;
+    padding-bottom: 10px;
+    color: gray;
+}
+
+footer li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+footer p{
+    text-align:center;
+    color: gray;
 }
