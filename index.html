@@ -47,17 +47,18 @@
                 </li>
             </ul>
             <div class="menu">
-                <i class="fa-solid fa-bars"></i>
-                <div class="navbarphone">
-                    <ul>
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#products-features">FEATURES</a></li>
-                        <li><a href="#">CLIENT</a></li>
-                        <li><a href="#pricing">PRICING</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#blog">BLOG</a></li>
-                        <li><a href="#">CONTACT</a></li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+                <div id="navbarphone">
+                        <a href="#">HOME</a>
+                        <a href="#products-features">FEATURES</a>
+                        <a href="#">CLIENT</a>
+                        <a href="#pricing">PRICING</a>
+                        <a href="#faq">FAQ</a>
+                        <a href="#">ABOUT</a>
+                        <a href="#blog">BLOG</a>
+                        <a href="#">CONTACT</a>
                     </ul>
                 </div>
             </div>
@@ -460,11 +461,21 @@
             </ul>
         </div>
         <div>
-            <ul>
+            <ul class="moreInfo">
             <p><small><a href="#">Terms & Condition</a></p><p>|</p><p><a href="#">Privacy Policy</a></p><p>|</p><p><a href="#">Contact Us</a></small></p>
             </ul>
-            <p><small>2022 © Kucra - Landing Page Template by Pichforest</small></p>
+            <p class="copyright"><small>2022 © Kucra - Landing Page Template by Pichforest</small></p>
         </div>
     </footer>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("navbarphone");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+        </script>
 </body>
 </html>

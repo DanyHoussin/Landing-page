@@ -25,7 +25,11 @@
     background: var(--degrader)
     }
 
-
+/* 
+=====================================================
+====================== HEADER =======================
+=====================================================
+ */
 
 header{
     display: flex;
@@ -45,7 +49,7 @@ header .navbar{
     gap: 20px;
 }
 
-.navbarphone{
+#navbarphone{
     display:none;
 }
 
@@ -70,20 +74,22 @@ header a:active {
     display: none;
 }
 
+/* 
+=====================================================
+======================= MAIN ========================
+=====================================================
+ */
 
 main{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-top: 5%;
+    padding-left: 8%;
+    padding-right: 8%;
     font-size: large;
+    width: 100%;
 }
-
-main img{
-    height: 550px;
-}
-
 
 .hautdepage{
     display: flex;
@@ -111,19 +117,17 @@ main img{
     background: #fff;
     border-radius: 60px;
     padding: 2px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 input[type=text] {
     width: 100%;
     box-sizing: border-box;
     padding: 3% 3%;
-    /* border-radius: 60px; */
     resize: none;
     color: #000;
     border: none;
     background: none;
-    /* background-color: rgb(191, 223, 233); */
-    /* border: 0cap; */
   }
 
 input[type=submit] {
@@ -149,6 +153,11 @@ input[type=submit]:hover{
     background-color: rgb(104, 167, 192);
 }
 
+/* 
+=====================================================
+============= Products Features & Cards =============
+=====================================================
+ */
 
 .ProductsFeatures{
     text-align:center;
@@ -219,6 +228,12 @@ input[type=submit]:hover{
     padding-top: 5px;
     padding-bottom: 7px;
 }
+
+/* 
+=====================================================
+======================= Team ========================
+=====================================================
+ */
 
 .teams{
     text-align:center;
@@ -353,6 +368,12 @@ input[type=submit]:hover{
     text-decoration: none; 
 }
 
+/* 
+=====================================================
+===================== PARALLAX ======================
+=====================================================
+ */
+
 .parallax {
     position: relative;
     background-image:url("img/parallax.png");
@@ -416,6 +437,12 @@ input[type=submit]:hover{
     color: black;
     opacity: 100%;
 }
+
+/* 
+=====================================================
+======================= BLOG ========================
+=====================================================
+ */
 
 .blog{
     text-align:center;
@@ -534,8 +561,14 @@ input[type=submit]:hover{
 
 .conteneura:hover .DateBlog {
     opacity: 1;
-  }
+}
   
+/* 
+=====================================================
+=============== CREATIVITY & STATS ==================
+=====================================================
+ */
+
 .creativity{
     display: flex;
     justify-content: center;
@@ -600,6 +633,12 @@ input[type=submit]:hover{
     cursor: pointer;
     transition: 0.7s;
 }
+
+/* 
+=====================================================
+======================= PRICE =======================
+=====================================================
+ */
 
 .ourPricing{
     background-color: rgb(241, 241, 241);
@@ -712,15 +751,6 @@ input[type=submit]:hover{
     width: 100%;
 }
 
-
-
-
-
-
-
-
-
-
  /* 
 =====================================================
 ====================== FOOTER =======================
@@ -792,54 +822,58 @@ footer p{
 
 @media only screen and (max-width: 1000px) {
 
-#wrapper{
-    position: relative;
-    overflow:hidden;
+    #wrapper{
+        position: relative;
+        overflow:hidden;
+        
+    }
 
-}
-
-header{
-}
-
-header .navbar{
-    display:none;
-}
-
-header li{
-    list-style-type: none;
-}
-
-.navbarphone{
-    box-sizing: border-box;
-    flex-direction: column;
-    border-radius: 0px 0px 0px 20px;
-    display: flex;
-    position: absolute;
-    top: -130%;
-    right: -1900%;
-    transition: 0.5s;
-    padding: 50px;
-    background-color: rgb(43, 100, 255);
-}
-
-.navbarphone li{
-
-}
-
-.navbarphone p{
-    padding-bottom: 100px;
-}
-
+    /* 
+=====================================================
+====================== HEADER =======================
+=====================================================
+ */
+    
+    header{
+    }
+    
+    header .navbar{
+        display:none;
+    }
+    
+    header li{
+        list-style-type: none;
+    }
+    
 .menu{
     display:block;
     position: absolute;
     right: 10%;
 }
 
-.menu:hover .navbarphone{
-    transform: translate(-120%);
+#navbarphone{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    box-sizing: border-box;
+    flex-direction: column;
+    border-radius: 20px 0px 0px 20px;
+    position: absolute;
+    top: 150%;
+    right: -600%;
     transition: 0.5s;
+    padding: 50px 100px 50px 50px;
+    background-color: rgba(2, 40, 145, 0.589);
+    backdrop-filter: blur(4px);
 }
+
+#navbarphone p{
+    padding-bottom: 100px;
+}
+
+/* 
+=====================================================
+======================= MAIN ========================
+=====================================================
+ */
 
 main{
     flex-direction: column;
@@ -852,6 +886,10 @@ main{
     text-align: center;
 }    
 
+.hautdepage h1{
+    font-size: 40px;
+}
+
 .hautdepage article{
     padding-right: 0px;
 }    
@@ -859,6 +897,12 @@ main{
 .hautdepage img{
     width: 110%;
 }    
+
+/* 
+=====================================================
+============= Products Features & Cards =============
+=====================================================
+ */
 
 .ProductsFeatures h1{
     padding-left: 10%;
@@ -877,6 +921,12 @@ main{
 .card{
     padding: 6% 2%;
 }    
+
+/* 
+=====================================================
+======================= Team ========================
+=====================================================
+ */
 
 .teams h1{
     padding-left: 10%;
@@ -936,9 +986,21 @@ main{
     width: 100%;
 }    
 
+/* 
+=====================================================
+===================== PARALLAX ======================
+=====================================================
+ */
+
 .parallax-text{
     padding: 0% 10%;
 }    
+
+/* 
+=====================================================
+======================= BLOG ========================
+=====================================================
+ */
 
 .blog h1{
     padding-left: 10%;
@@ -959,18 +1021,47 @@ main{
     width: 70%;
 }
 
+/* 
+=====================================================
+=============== CREATIVITY & STATS ==================
+=====================================================
+ */
+
 .creativity{
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    padding-left: 0%;
+}
+
+.creativity .creativityPresentation{
+    width: 100%;
 }
 
 .creativityPresentation{
-    padding-bottom: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.creativityPresentation article{
+    padding: 10% 10% 10% 10%;
+    justify-content: center;
 }
 
 .creativityPresentation ul{
     justify-content: center;
 }
+
+.creativityPresentation p{
+    font-size: 150%;
+}
+
+/* 
+=====================================================
+======================= PRICE =======================
+=====================================================
+ */
 
 .ourPricing{
     height: 100%;
@@ -986,7 +1077,24 @@ main{
     width: 70%;
 }
 
-footer div ul{
-    gap: 10px;
+ /* 
+=====================================================
+====================== FOOTER =======================
+=====================================================
+ */
+
+footer .iconsfooter ul{
+    gap: 20px;
 }
+
+.moreInfo{
+    flex-direction: column;
+    gap: 1px;
+}
+
+footer .copyright{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 }
